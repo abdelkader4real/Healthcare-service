@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>{{ service.name }}</h2>
+    <div class="items">
+        {% for clinic in items %}
+        <div class="item-card">
+            <h3>{{ clinic.name }}</h3>
+            <p><strong>Address:</strong> {{ clinic.address }}</p>
+            <p><strong>Phone:</strong> {{ clinic.phone }}</p>
+            <p><strong>Specialization:</strong> {{ clinic.specialization }}</p>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

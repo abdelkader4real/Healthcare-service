@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #0078d7;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.service-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 30%;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.item-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
